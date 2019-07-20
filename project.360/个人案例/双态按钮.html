@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .btn {
+      padding: 5px 10px;
+      border-radius: 3px;
+      border: 1px solid #aaa;
+      outline: none;
+    }
+    .up {
+      background: #fff;
+      color: #333;
+    }
+    .down {
+      background: #ddd;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn up">双态按钮</button>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //双态按钮: 让按钮的class在up和down之间切换
+  /*
+    样式的获取和修改
+    $元素.css("css属性名"[,"属性值"])
+
+    批量
+  */
+ //1.查找触发事件元素
+ $("button")
+ //2.绑定事件处理函数
+ .click(function(){
+  //3.查找修改元素 
+  var $btn=$(this);
+  //4.修改元素
+  //如果$btn没有down这个class
+   //元素有up类选择器时，是up状态，增加down选择器时（层叠性，将up的样式取代），是down状态
+   /*   1.继承性
+        大部分的css效果是可以直接被子元素继承的
+        必须是层级结构
+        2.层叠性
+        可以为一个元素定义多个样式规则
+        规则中属性不冲突(不重复)，可以同时作用到当前元素上
+        3.优先级
+        如果样式声明冲突时，按照样式规则优先级去应用
+        默认的优先级，从高到低：
+        1.内联样式(行内样式)优先级最高
+        2.内部样式、外部样式，遵循就近原则
+        3.浏览器默认样式最低*/
+
+ /* 
+    if(!$btn.hasClass("down")){
+      $btn.addClass("down")
+    }else{
+      $btn.removeClass("down")
+    }
+*/
+  $btn.toggleClass("down");
+  
+ })
+</script>
+</body>
+</html>

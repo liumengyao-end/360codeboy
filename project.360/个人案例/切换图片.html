@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+	<h1>操作元素的属性</h1>
+	<img src="img/1.jpg" alt="1">
+	<script src="js/jquery-1.11.3.js"></script>
+<!--<script>
+	/*
+	2. 修改: 同DOM
+		内容: 
+		1. 原始HTML片段: $().html([新HTML片段])  .innerHTML
+		2. 纯文本内容: $().text([新文本])  .textContent
+		3. 表单元素的值: $().val ([新值])    .value
+		属性:
+		1. HTML标准属性: 2种访问方式: 
+			1.核心DOM API: 
+			$().attr("属性名"[,新值])  .getAttribute()/.setAttribute()
+			2. HTML DOM API: 
+			$().prop("属性名"[,新值])  elem.属性名
+		2. 状态属性:
+			$().prop("状态"[,bool])   elem.状态
+		3. 自定义扩展属性:
+			$().attr("自定义属性")   .getAttribute()/.setAttribute()
+		其实attr和prop可一次修改多个属性:
+		$().attr/prop({
+			属性名:值,
+			属性名:值,
+		})
+
+	*/
+		
+		//1.查找触发事件的元素
+		$("img")
+		//2.绑定事件处理函数
+		.click(function(){
+			var $img=$(this);
+			//确定img位置
+			var i=parseInt(
+				$img.attr("alt")
+			);
+			//4张图片循环
+			i=i<4?i+1:1;
+			//将下一张图片的名字（url）设置到src属性中
+			$img.attr({
+				//对象语法同时写多个属性
+				src:`img/${i}.jpg`,
+				alt:i
+			})
+		})
+		/*同时修改一个元素的多个属性
+		$元素.attr({
+			属性名:"属性值",
+			...:...,
+		})*/
+	</script>
+-->
+ <script>
+		//单击图片，切换下一张
+	 //1.查找触发事件元素
+	 $("img")
+	 //2.事件处理函数
+	 .click(function(){
+		 //3.查找修改的元素
+		 var $x=$(this);
+		 //4.修改元素,修改img元素的src属性中1位置的字符串，将alt的值拼接进去
+		 var i=parseInt($x.attr("alt"));
+		 //4张图片循环播放——播放到4时，i不再加1，而是值为1；
+		 //i=i<4?i+1:1;
+		 i<4?i=i+1:i=1;
+		  //将动态i，放进alt属性中
+		 //同时将src属性的值改为动态的
+		 $x.attr({
+			 src:`img/${i}.jpg`,
+			 alt:i
+			})
+		 
+	 })
+ </script>
+</body>
+</html>

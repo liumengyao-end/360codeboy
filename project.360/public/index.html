@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+            .change img{
+                display:none; 
+             }
+             .change_on{
+                 display:none;
+                 position:absolute;
+                 top:300px;
+             }
+    </style>
+</head>
+<body>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/jquery-3.2.1.js"></script>
+    <header>
+        <iframe src="header.html" frameborder="0" class="my_header"></iframe>
+    </header>
+    <div class="banner">
+        <div class="box">
+            <img src="img/header/1.jpg" alt="">
+        </div>
+    </div>
+    <div class="index-menu">
+        <ul class="menu-list">
+            <li><i><img src="img/little_png/phone.png" alt=""></i><span>手机/配件</span>
+            <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/shuma.png" alt=""></i><span>数码</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/diannao.png" alt=""></i><span>电脑周边</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/yidong.png" alt=""></i><span>移动存储</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/qiche.png" alt=""></i><span>汽车用品</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/jiayongdianqi.png" alt=""></i><span>家用电器</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/huwaiyundong.png" alt=""></i><span>户外/运动</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            <li><i><img src="img/little_png/jiaoyuwenju.png" alt=""></i><span>教育/文具</span>
+                <div class="index_phone">
+                        <h5>手机通讯</h5>
+                        <div class="title_first">
+                        </div>
+                        <h5>手机配件</h5>
+                        <div class="title_second">            
+                        </div>
+                        <h5>二手手机</h5>
+                        <div class="title_third">
+                        </div>
+                </div></li>
+            
+        </ul>
+        <!--手机配件-->
+        
+ 
+        <!--数码
+        <div class="index_shuma">
+            <h5>智能设备</h5>
+            <div class="title_first">
+            </div>
+            <h5>影音娱乐</h5>
+            <div class="title_first">
+            </div>
+        </div>
+      电脑周边
+        <div class="index_diannao">
+            <h5>电脑整机</h5>
+            <div class="title_first">
+            </div>
+            <h5>电脑配件</h5>
+            <div class="title_first">
+            </div>
+        </div>
+      移动存储
+        <div class="yidong">
+            <h5>U盘</h5>
+            <div class="title_first">
+            </div>
+            <h5>移动硬盘</h5>
+            <div class="title_first">
+            </div>
+            <h5>存储卡</h5>
+            <div class="title_first">
+            </div>
+        </div>
+        汽车用品
+        <div class="qiche">
+            <h5>车载电器</h5>
+            <div class="title_first">
+            </div>
+            <h5>车品装饰</h5>
+            <div class="title_first">
+            </div>
+            <h5>维修保养</h5>
+            <div class="title_first">
+            </div>
+            <h5>美容清洗</h5>
+            <div class="title_first">
+            </div>
+        </div>
+        家用电器
+        <div class="dianqi">
+            <h5>个护电器</h5>
+            <div class="title_first">
+            </div>
+            <h5>生活电器</h5>
+            <div class="title_first">
+            </div>
+            <h5>厨房小电</h5>
+            <div class="title_first">
+            </div>
+        </div>
+       户外/运动
+        <div class="huwai">
+            <h5>户外装备</h5>
+            <div class="title_first">
+            </div>
+            <h5>体育用品</h5>
+            <div class="title_first">
+            </div>
+            <h5>垂钓用品</h5>
+            <div class="title_first">
+            </div>
+            <h5>游泳用品</h5>
+            <div class="title_first">
+            </div>
+        </div>
+        教育/运动
+        <div class="jiaoyu">
+            <h5>电子教育</h5>
+            <div class="title_first">
+            </div>
+            <h5>文具耗材</h5>
+            <div class="title_first">
+            </div>
+        </div>
+    -->
+    </div>
+    <!-- 右侧广告 -->
+    <div class="index-ad">
+        <div class="index-ad-box">
+            <div class="ad-news">
+                <h5>商城头条</h5>
+                <ul>
+                    <li><a href="#">N6系列炫酷新配色，预约赢新机</a></li>
+                    <li><a href="#">360行车记录仪又一力作>></a></li>
+                    <li><a href="#">拍照定位通话，儿童手表全搞定→</a></li>
+                </ul>
+            </div>
+            <div class="ad-icon">
+                <ul>
+                    <li><i><img src="img/little_png/phone.png" alt=""></i><p>手机</p> </li>
+                    <li><i><img src="img/little_png/phone.png" alt=""></i><p>智能</p></li>
+                    <li><i><img src="img/little_png/phone.png" alt=""></i><p>汽车</p></li>
+                </ul>
+                
+            </div>  
+            <div class="ad-img">
+                <a href="#">
+                    <img src="img/index/ad_img.jpg" alt="">
+                </a>
+            </div>
+    </div>
+    </div>
+    <div class="main">
+        <!--左侧倒计时-->
+        <div class="main-bg">
+            <div class="rgtime">
+                    <p>当前场次剩余事件</p>
+                    <span>00</span> :
+                    <span>00</span> :
+                    <span>00</span>
+            </div>
+       <!--右侧图片-->
+            <div class="activity_box">
+                <ul class="activty_list">
+                    <!--
+                    <li><a href="#">
+                        <img src="img/activity/01.jpg" alt="">
+                        <h5>美的（Midea）吸尘器C3-L143C家用无耗材卧式吸尘器</h5>
+                        <p class="list-price">￥309.00 <em>￥400.00</em></p>
+                    </a></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+        <!--foor-title-->
+        <!--明星产品-->
+        <div class="floor_title">
+            <h2>明星产品</h2>
+        </div>
+        
+        <div class="start-box">
+            <ul class="start-ul">
+                <li>
+                    <a href="">
+                        <img src="img/start/01.jpg" alt="">
+                        <h5>360手机 N6 Pro 全网通 6GB+64GB 钛泽银色 移动联通</h5>
+                        <span>￥1800.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/start/02.jpg" alt="">
+                        <h5>360手机 N6 Pro 全网通 6GB+64GB 钛泽银色 移动联通</h5>
+                        <span>￥999.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/start/03.jpg" alt="">
+                        <h5>360手机 N6 Pro 全网通 6GB+64GB 钛泽银色 移动联通</h5>
+                        <span>￥149.00</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/start/04.jpg" alt="">
+                        <h5>360手机 N6 Pro 全网通 6GB+64GB 钛泽银色 移动联通</h5>
+                        <span>￥459.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/start/05.jpg" alt="">
+                        <h5>360手机 N6 Pro 全网通 6GB+64GB 钛泽银色 移动联通</h5>
+                        <span>￥599.00</span>
+                    </a>
+                 </li>
+            </ul>
+        </div>
+        <!--手机配件-->
+        <div class="floor_title">
+            <h2>手机配件</h2>
+        </div>
+        <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+         <!--智能数码-->
+         <div class="floor_title">智能数码</div>
+         <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+         <!--汽车用品-->
+         <div class="floor_title">汽车用品</div>
+         <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+         <!--家用电器-->
+         <div class="floor_title">家用电器</div>
+         <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+         <!--户外/运动-->
+         <div class="floor_title">户外/运动</div>
+         <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+         <!--电脑周边-->
+         <div class="floor_title">电脑周边</div>
+         <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+         <!--更多推荐-->
+         <div class="floor_title">更多推荐</div>
+         <div class="floor_first_box">
+                <div class="rg_img">
+                    <a href="">
+                        <img src="img/start/a1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/start/a11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="lf_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/start/a01.jpg" alt="">
+                                <h5>360手机N6 Pro 深海蓝</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <img src="img/start/a02.jpg" alt="">
+                                <h5> 360手机 N6 Lite 璀璨金色</h5>
+                                <p>￥2399.00</p>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                   <img src="img/start/a03.jpg" alt="">
+                                   <h5>360手机 N6 Pro  钛泽银色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+                           <li>
+                                <a href="#">
+                                   <img src="img/start/a04.jpg" alt="">
+                                   <h5> 360手机 N6 燧石黑色</h5>
+                                   <p>￥2399.00</p>
+                               </a>
+                           </li>
+
+                           <li>
+                                <a href="#">
+                                    <img src="img/start/a01.jpg" alt="">
+                                    <h5> F4S 移动定制版 3GB 32GB</h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#">
+                                    <img src="img/start/a02.jpg" alt="">
+                                    <h5></h5>
+                                    <p>￥2399.00</p>
+                                </a>
+                            </li>
+                            <li>
+                                    <a href="#">
+                                       <img src="img/start/a03.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                               <li>
+                                    <a href="#">
+                                       <img src="img/start/a04.jpg" alt="">
+                                       <h5></h5>
+                                       <p>￥2399.00</p>
+                                   </a>
+                               </li>
+                    </ul>
+
+                </div>
+         </div>
+    <!--滑轮滚动事件显示左侧导航栏-->
+<div class="main_left_aside">
+    <ul class="left_aside_list">
+         <li class="left_aside_item ">
+                 <a href="javascript:;" class="left_aside_btn">
+                 <span class="left_aside_txt">限时秒杀</span>
+             </a>
+         </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">明星单品</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">手机</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">数码</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">车品</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">家电</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">运动</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+ 
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">电脑</span>
+            </a>
+ 
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <span class="left_aside_txt">推荐</span>
+            </a>
+        </li>
+        <li class="left_aside_item ">
+            <a href="javascript:;" class="left_aside_btn">
+                <img src="img/index/totop.png" tppabs="http://www.codeboy.com/pro/zsx/img/index/totop.png" alt="">
+            </a>
+        </li>
+     </ul>
+ </div>
+ <!--js效果-->
+    <div class="change">
+        <img src="img/activity/01.jpg" alt="">
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <script src="js/index.js"></script>
+    <script src="js/details.js"></script>
+
+</html>

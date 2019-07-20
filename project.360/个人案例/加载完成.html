@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+	.c{
+		position:absolute;
+		bottom:0;
+		transition:2s;
+	}
+	.d{bottom:1000px;
+		
+	}
+  </style>
+</head>
+<body>
+<img src="img/star.png" class="c">
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //单击小星星，闪烁三次，最后消失
+  //(先使用回调函数实现，再使用排队简化)
+ /* $("img").click(function(){
+    var times=3;
+    var $star=$(this);
+    for(var i=0;i<times;i++){
+      $star.fadeOut().fadeIn();
+    }
+    $star.fadeOut();
+  })*/
+	window.onload=function(){
+		$("img").addClass("d");
+		console.log(123)
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+.my_header{
+    width:100%;
+    height:300px;
+}
+.banner{
+    position: relative;
+}
+
+
+
+.banner{
+    width:1365px;
+    height:420px;
+}
+.banner .box{
+    width:1365px;
+    height:420px;
+    position:relative;
+}
+.index-menu{
+    position:relative;
+}
+.menu-list{
+    background-color:rgb(255,255,255);
+    height:420px;
+    padding:0;
+    margin-left:20px;
+    position: absolute;
+    bottom:0px;
+    left:310px;
+}
+.menu-list li{
+    width:210px;
+    height:51px;
+}
+.menu-list li i{
+    line-height:51px;
+}
+.menu-list li i img{
+    vertical-align: middle;
+}
+.menu-list li span{
+    margin-left:20px;
+}
+
+
+.menu-list i>img{
+    margin-left:27px;
+    text-align:right;
+}
+.index-ad{
+    position: relative;
+}
+.index-ad-box{
+    position:absolute;
+    top:-425px;
+    right:310px;
+}
+.ad-news{
+    display:inline-block;
+    width:190px;
+    height:120px;
+    position: absolute;
+    top:10px;
+    right:30px;
+    background-color:rgb(255,255,255);
+    padding-top:15px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.ad-news h5{
+    display:inline-block;
+    padding:10px 0;
+}
+.ad-news ul{
+    display:inline-block;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray; 
+    padding:5px 0;  
+}
+.ad-icon{
+    display:inline-block;
+    width:216px;
+    height:72px;
+    position: absolute;
+    top:137px;
+    right:33px;
+    background-color:#fff;
+}
+.ad-icon ul{
+    display:flex;
+}
+.ad-icon ul li{
+    text-align:center;
+    width:71px;
+    height:73px;
+    border-right:1px solid gray;
+}
+/*轮播导航*/
+index-menu{
+    position: relative;
+}
+index-menu>li{
+    cursor: pointer;
+}
+.index_phone{
+    width:895px;
+    z-index:2;
+    height:390px;
+    background-color:gainsboro;
+    position: absolute;
+    top:0px;
+    left:210px;
+    padding-top:5px;
+    padding-left:20px;
+    padding-right:100px;
+    padding-bottom:25px;
+    display:none;
+    cursor: pointer;
+}
+.menu-list>li:nth-child(1):hover{
+    background-color:antiquewhite;
+    color:#008B00;
+}
+.menu-list>li:nth-child(1):hover .index_phone{
+    /*????*/
+    background-color:#fff;
+    display:block;
+}
+.index_phone a{
+    display:inline-block;
+    width:130px;
+    height:52px;
+}
+.index_phone a span{
+    width:51px;
+    height:52px;
+}
+.index_phone a img{
+    vertical-align:middle;
+    width:40px;
+    height:40px;
+}
+.index_phone h5{
+    line-height:51px;
+}
+/*轮播结尾*/
+
+
+
+
+.ad-img{
+    width:216px;
+    height:200px;
+    position: absolute;
+    top:219px;
+    right:33px;
+}
+
+.main{
+    width:100%;
+    height:260px;
+    margin-top:20px;
+    background-image:url(../img/index/flashsale-bg.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+   
+}
+.main-bg{
+    width:1240px;
+    height:246px;
+    margin:0 auto;
+    position: relative;
+}
+.main-bg .rgtime{
+    width:213px;
+    height:150px;
+    margin:0;
+    color:#fff;
+    padding-top:99px; 
+    padding-left:45px; 
+}
+.rgtime span{
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background-color:#FCB800;
+    text-align:center;
+    line-height:35px;
+}
+
+
+
+.activty_list{
+    display:inline-flex;
+    position:absolute;
+    bottom:0px;
+    right:20px;
+}
+.activty_list li{
+    width:190px;
+    height:230px;
+    background-color:#fff;
+    margin-left:15px;
+}
+.activty_list img{
+    width:120px;
+    height:120px;
+}
+.activty_list em{
+    text-decoration: line-through;
+}
+/*floor-title*/
+/*明星产品*/
+body{
+    background-color:#F5F5F5;
+}
+.main{
+    padding-top:15px;
+    width:1240px;
+    margin:0 auto;
+}
+.floor_title{
+    width:91%;
+    height:36px;
+    padding:30px 0;
+}
+.floor_title h2{
+    width:1240px;
+    height:36px;
+    padding:10px 50px;
+    
+    display:inline-block;
+    font-weight: normal;
+}
+.start-ul{
+    display:inline-flex;
+}
+.start-ul li{
+    background-color:#fff;
+    width:236px;
+    height:300px;
+    justify-content: space-around;
+    margin-left:15px;
+    text-align:center;
+    
+}
+.start-ul li:first-child{
+    margin-left:0;
+}
+.start-ul li img{
+    margin-top:20px;
+}
+.start-ul li h5{
+    display:inline-block;
+    margin-top:30px;
+    margin-bottom:10px;
+    font-weight: normal;
+    font-size:12px;
+    color:#666666;
+    padding:0 35px;
+}
+.start-ul li span{
+    font-size: 18px;
+    color: #f10215;
+}
+.floor_first_box{
+    width:1353px;
+    height:650px;
+    position: relative;
+}
+.floor_first_box .rg_img{
+    width:236px;
+    height:630px;
+    display:inline-block;
+}
+.floor_first_box .rg_img img:first-child{
+    margin-bottom:8px;
+    margin-top:0;
+}
+.floor_first_box .lf_list{
+    width:989px;
+    height:630px;
+    display:inline-block;
+    position: absolute;
+    top:0px;
+    margin-left:10px;
+
+}
+.floor_first_box .lf_list ul{
+    display:inline-flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    text-align:center;
+}
+.floor_first_box .lf_list ul li{
+    width:240px;
+    height:300px;
+    background-color:#fff;
+}
+/*
+box-shadow: h-shadow v-shadow blur spread color
+h-shadow 水平方向阴影偏移，必须值
+v-shadow 垂直方向偏移量，必须值
+以下可选参数
+blur：阴影的模糊距离，可选值，越大模糊距离越明显
+spread：阴影的尺寸，指定要在基础阴影上扩出的大小
+color：阴影颜色
+inset：把默认的外部阴影设置为内部阴影
+
+*/
+.floor_first_box .lf_list ul li:hover{
+    box-shadow:2px 2px 2px 2px  rgba(0,0,0,0.3);
+}
+.floor_first_box .lf_list ul li:hover img{
+    transform: scale(1.1);
+    transition: all 1s linear;
+    overflow:hidden;
+} 
+.floor_first_box .lf_list ul li img{
+    padding-top:30px;
+}
+.floor_first_box .lf_list ul li h5{
+    padding-top:20px;
+}
+.floor_first_box .lf_list ul li p{
+    padding-top:20px;
+    font-size: 18px;
+    color: #f10215;
+}
+.floor_first_box .lf_list ul li:first-child{
+    margin-bottom:10px;
+}
+/*楼层滚动*/
+/*固定楼层*/
+.main_left_aside{
+    display:none;
+    position: fixed;
+    z-index: 100;
+    background-color: #32333D;
+    left: 12%;
+    top:15%;
+}
+
+.left_aside_item{
+    width: 45px;
+    height:50px;
+
+    text-align: center;
+    display: block;
+
+}
+.left_aside_btn{
+    width:39px;
+    height:50px;
+    display: inline-block;
+    border-bottom: 1px solid #41424e;
+    font-size: 12px;
+    line-height: 12px;
+
+    text-align: center;
+}
+.left_aside_txt{
+    color:#fff;
+    width:30px;
+    height:auto;
+    display: inline-block;
+    margin-top:15px;
+}
+.left_aside_item:hover, .left_aside_on {
+
+    background-color: #23AC38;
+    border-bottom: 1px solid #23AC38;
+}
+.left_aside_item:last-child:hover{
+    background-color: #32333D;
+}
+/*js效果*/
+
